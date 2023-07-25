@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario de Registro</title>
+  <link rel="stylesheet" type="text/css" href="formula.css">
+</head>
+<body>
+  <div class="container">
+    <h2>VALIDACION DE FORMULARIO</h2>
+    <div class="form-wrapper">
+      <div class="column">
+        <form onsubmit="return validarFormulario()">
+          <div class="form-group">
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario" placeholder="Margue123" required>
+            <p class="hint">El usuario tiene que ser de 5 a 15 digitos y solo puede contener numeros, letras y guion bajo.</p>
+          </div>
+          <div class="form-group">
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" name="nombres" required>
+          </div>
+        </form>
+      </div>
+      <div class="column">
+        <form onsubmit="return validarFormulario()">
+          <div class="form-group">
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+          </div>
+
+          <div class="form-group">
+            <p class="hint">Digite su contraseña</p>
+            <label for="repetirContrasena">Repetir Contraseña:</label>
+            <input type="password" id="repetirContrasena" name="repetirContrasena" required>
+          </div>
+          <input type="submit" value="Registrarse">
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="formu.js"></script>
+</body>
+</html>
